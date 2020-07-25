@@ -35,10 +35,10 @@ class SideNav extends Component {
             <NavLink href="#" className="nav-link"><FontAwesomeIcon icon="home" /> Home</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#" className="nav-link"><FontAwesomeIcon icon="file-invoice-dollar" /> Reports</NavLink>
+            <NavLink href="Reports.html" className="nav-link"><FontAwesomeIcon icon="file-invoice-dollar" />Center Wise Reports</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#" className="nav-link"><FontAwesomeIcon icon="users" /> Users</NavLink>
+            <NavLink href="" className="nav-link"><FontAwesomeIcon icon="users" />Users</NavLink>
           </NavItem>
           
 
