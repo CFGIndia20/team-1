@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#0E0606"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="391dp"
+        android:layout_height="536dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#120F0F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1C1717">
+
+            <TextView
+                android:id="@+id/qstn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="How was the food provided to you?"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="386dp"
+                android:layout_height="257dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/qstn"
+                app:srcCompat="@drawable/food" />
+
+            <ImageButton
+                android:id="@+id/thumbsup"
+                android:layout_width="139dp"
+                android:layout_height="122dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="77dp"
+                android:background="#1C1717"
+                app:layout_constraintEnd_toStartOf="@+id/thumbsdown"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img"
+                app:srcCompat="@drawable/thumbsup" />
+
+            <ImageButton
+                android:id="@+id/thumbsdown"
+                android:layout_width="139dp"
+                android:layout_height="122dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="20dp"
+                android:background="#1C1717"
+                app:layout_constraintBottom_toTopOf="@+id/next"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/thumbsup"
+                app:layout_constraintTop_toBottomOf="@+id/img"
+                app:srcCompat="@drawable/thumbsdown" />
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_light"
+                android:fontFamily="monospace"
+                android:text="Next"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/thumbsup" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
