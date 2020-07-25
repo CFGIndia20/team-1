@@ -35,7 +35,7 @@ class SideNav extends Component {
             <NavLink href="#" className="nav-link"><FontAwesomeIcon icon="home" /> Home</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="https://nikhil1699.github.io/" className="nav-link"><FontAwesomeIcon icon="file-invoice-dollar" />Center Wise Reports</NavLink>
+            <NavLink href="https://#######.github.io/" className="nav-link"><FontAwesomeIcon icon="file-invoice-dollar" />Center Wise Reports</NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="" className="nav-link"><FontAwesomeIcon icon="users" />Users</NavLink>
