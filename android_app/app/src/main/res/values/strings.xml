@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Aashray</string>
+    <string name="welcome">Welcome to Aashray</string>
+    <string name="startFeedback">Give Feedback</string>
 </resources>

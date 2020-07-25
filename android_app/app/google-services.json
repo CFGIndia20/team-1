@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "417279724498",
+    "firebase_url": "https://aashray-3d07c.firebaseio.com",
+    "project_id": "aashray-3d07c",
+    "storage_bucket": "aashray-3d07c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417279724498:android:b37ae7ab423a84ebee560b",
+        "android_client_info": {
+          "package_name": "com.example.aashray"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417279724498-cljaf4j7112btuo6jpq1if5mh44mh9vn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aashray",
+            "certificate_hash": "88d22aee9eb32fd3714198d4170655193d5afcaa"
+          }
+        },
+        {
+          "client_id": "417279724498-0vcecn97ejutnffbi5mpm6eq0scd6dgo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABMabBSHjK9XHOuBNk_30IYDUZxBIbwn4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417279724498-0vcecn97ejutnffbi5mpm6eq0scd6dgo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
