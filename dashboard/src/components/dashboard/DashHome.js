@@ -32,7 +32,6 @@ export default function DashHome() {
     [!data]
   );
 
-
   return (
     <div className="dashboard-wrap">
 
@@ -59,7 +58,11 @@ export default function DashHome() {
           </Col>
 
           <Col md="8">
-            <BarChart />
+            <BarChart
+              data={data}
+              width = {400}
+              height={500}
+            />
           </Col>
         </Row>
 

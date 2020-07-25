@@ -9,11 +9,21 @@ export default function BarChart() {
     useEffect(() => {
 
         //Firestore database collection title is sales.
-        db.collection('tester').get().then(res => { //database server response
+        db.collection('test 2 ').get().then(res => { //database server response
             let data = [];
             res.docs.forEach(doc => {   //Firestore documents inside db collections
-                data.push(doc.data()); //D3 data() method on the firestore doc to get the data in the doc.
+                const x = doc.data();
+                // console.log(x["bed"])
+                // data.push(x.values()); //D3 data() method on the firestore doc to get the data in the doc.
+                // console.log("Heyya");
+                // console.log(x.values());
+                const y = Object.values(x);
+                for (let i = 0;i<y.length;i++){
+                    data.push(y[i]);
+                }
+                
             });
+            
             console.log(data);
 
             // select the svg container first
@@ -21,6 +31,8 @@ export default function BarChart() {
             svg.selectAll("*").remove()
 
             //----------- Start custom D3 code below HERE-----------------
+            var  histy = d3.histogram().domain([0,1]);
+            var bins = histy(data);
 
             const margin = { top: 20, right: 20, bottom: 100, left: 100 };
             const graphWidth = 600 - margin.left - margin.right;
@@ -92,7 +104,7 @@ export default function BarChart() {
 
     return (
         <div className="canvas">
-           
+         
             <svg className="svg-canvas" width="640px" height="400px" />
         </div>
     );
