@@ -1,0 +1,93 @@
+{
+  "id": "9f07feed-d688-4bd0-835c-e9cf7c150ca2",
+  "name": "welcome",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "welcome-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "title": "",
+          "textToSpeech": "",
+          "items": [
+            {
+              "description": "",
+              "textToSpeech": "Welcome, Sanjiv. Thanks for your Contributions to St Jude!",
+              "displayText": "",
+              "footer": "",
+              "ssml": ""
+            }
+          ],
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "basic_card",
+          "platform": "google",
+          "subtitle": "A Place of Hope for children undergoing treatment for Cancer",
+          "title": "",
+          "textToSpeech": "",
+          "image": {
+            "url": "https://media.children.org/cdn-8d44527fbac59a0/globalassets/02_see-the-impact---locations/india/india-country-top.jpg",
+            "accessibilityText": "No image"
+          },
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "title": "",
+          "textToSpeech": "",
+          "suggestions": [
+            {
+              "title": "My Donations"
+            },
+            {
+              "title": "CEO Message"
+            },
+            {
+              "title": "Donate"
+            }
+          ],
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Hello, Welcome to Saint Judes !! How can we help ?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "GOOGLE_ASSISTANT_WELCOME"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

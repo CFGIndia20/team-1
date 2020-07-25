@@ -1,0 +1,105 @@
+{
+  "id": "fd4adc90-3c79-4895-a614-327a302570d8",
+  "name": "donations",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "title": "",
+          "textToSpeech": "",
+          "items": [
+            {
+              "description": "",
+              "textToSpeech": "These are your previous donations",
+              "displayText": "",
+              "footer": "",
+              "ssml": ""
+            }
+          ],
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "browse_carousel_card",
+          "platform": "google",
+          "title": "",
+          "textToSpeech": "",
+          "items": [
+            {
+              "description": "Areeba is a 13-year-old from Muzaffarnagar, Uttar Pradesh. She had been suffering from severe pain in her leg for a long time. When her parents took her to AIIMS, she was diagnosed with bone cancer.",
+              "image": {
+                "url": "https://www.stjudechild.org/auth/writereaddata/images/2906200441stories%20of%20hope%20Home%20Page%20600px%20x%20409px.jpg",
+                "accessibilityText": "no image"
+              },
+              "title": "Donation Rs 20000 spent on Areeba in January 2020",
+              "displayText": "",
+              "footer": "",
+              "openUrlAction": {
+                "url": "https://www.stjudechild.org/stories-of-hope.aspx",
+                "urlTypeHint": "URL_TYPE_HINT_UNSPECIFIED"
+              },
+              "ssml": ""
+            },
+            {
+              "description": "Hemika Sharma is a cute 3-years-and-7-month-old-girl who came to our Jaipur centre from the Bhiwani District for her  treatment of B Cell ALL (a kind of blood cancer).",
+              "image": {
+                "url": "https://www.stjudechild.org/auth/writereaddata/images/3006205726outer%20page%2002%20600%20x%20409%20px.jpg",
+                "accessibilityText": "no image"
+              },
+              "title": "Donation Rs 10000 spent on Hemika In May 2020",
+              "displayText": "",
+              "footer": "",
+              "openUrlAction": {
+                "url": "https://www.stjudechild.org/stories-of-hope.aspx",
+                "urlTypeHint": "URL_TYPE_HINT_UNSPECIFIED"
+              },
+              "ssml": ""
+            }
+          ],
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "title": "",
+          "textToSpeech": "",
+          "suggestions": [
+            {
+              "title": "Main Menu"
+            },
+            {
+              "title": "Done"
+            }
+          ],
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

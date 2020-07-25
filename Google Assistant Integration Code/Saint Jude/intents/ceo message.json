@@ -1,0 +1,86 @@
+{
+  "id": "23102e4f-446c-452a-b26b-33198f4ecc7c",
+  "name": "ceo message",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "title": "",
+          "textToSpeech": "",
+          "items": [
+            {
+              "description": "",
+              "textToSpeech": "Below is the link to the youtube video by the CEO:",
+              "displayText": "",
+              "footer": "",
+              "ssml": ""
+            }
+          ],
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "basic_card",
+          "platform": "google",
+          "title": "Message from CEO",
+          "buttons": [
+            {
+              "openUrlAction": {
+                "url": "https://www.youtube.com/watch?v\u003dhtq9jf9WKbI\u0026feature\u003dyoutu.be",
+                "urlTypeHint": "URL_TYPE_HINT_UNSPECIFIED"
+              },
+              "title": "Video Link"
+            }
+          ],
+          "textToSpeech": "",
+          "image": {
+            "url": "https://cdn1.iconfinder.com/data/icons/logotypes/32/youtube-512.png",
+            "accessibilityText": "no image"
+          },
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "title": "",
+          "textToSpeech": "",
+          "suggestions": [
+            {
+              "title": "Main Menu"
+            },
+            {
+              "title": "Done"
+            }
+          ],
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
