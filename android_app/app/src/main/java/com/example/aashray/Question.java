@@ -15,6 +15,12 @@ public class Question {
         //this.imageResourceId = imageResourceId;
     }
 
+    public Question(String question_key, String question, int imageResourceId) {
+        this.question = question;
+        this.question_key = question_key;
+        this.imageResourceId = imageResourceId;
+    }
+
     public String getQuestion() {
         return question;
     }
