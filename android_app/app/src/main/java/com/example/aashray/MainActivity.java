@@ -16,6 +16,7 @@ import com.google.firebase.auth.FirebaseUser;
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
+
     private FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
 
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mFirebaseAuth = FirebaseAuth.getInstance();
 
-
+        // firebase auth
         authStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
+        // starting the questionnaire
         Button submit = findViewById(R.id.submit);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
