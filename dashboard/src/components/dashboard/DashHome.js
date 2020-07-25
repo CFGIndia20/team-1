@@ -35,11 +35,7 @@ export default function DashHome() {
   })
   console.log(genArray)
  
-  var v1  = 55;
-  var v2  = 64;
-  var v3 = 43;
-  var v4 = 75;
-  var v5 = 66;
+ 
   const [data, setData] = useState(generateData(0));
   const changeData = () => {
     setData(generateData());
@@ -84,7 +80,7 @@ const dummyData  = [
               <thead>
                 <tr>
                   <th>Center Name</th>
-                  <th>Best In</th>
+                  <th>Best In (% of users voting)</th>
                   <th>Needs Improvements</th>
                 </tr>
               </thead>

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "96f3ae82-40fe-4a4f-a2a5-3a7ac24c0720",
+    "data": [
+      {
+        "text": "donations",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "d72fd891-fc29-43ac-b111-3def49649c60",
+    "data": [
+      {
+        "text": "view my donations",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "ce5c2be3-92b2-4141-a4e3-aae8f84630f9",
+    "data": [
+      {
+        "text": "my donations",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]
