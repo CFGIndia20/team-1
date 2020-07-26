@@ -2,13 +2,22 @@ from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
 import pyrebase
 from fpdf import FPDF
-from config import keys
 
+config = {
+  "apiKey": "AIzaSyDZKPNKXkW_R8yUog4onZNm1VDVQuwTPcc",
+  "authDomain": "aashray-3d07c.firebaseapp.com",
+  "databaseURL": "https://aashray-3d07c.firebaseio.com",
+  "projectId": "aashray-3d07c",
+  "storageBucket": "aashray-3d07c.appspot.com",
+  "messagingSenderId": "417279724498",
+  "appId": "1:417279724498:web:66fc11b9ab02c5dbee560b",
+  "measurementId": "G-WHC1XZ7MFQ"
+}
 app = Flask(__name__)
 
 
-firebaseConfig = keys
-firebase = pyrebase.initialize_app(firebaseConfig)
+# firebaseConfig = keys
+firebase = pyrebase.initialize_app(config)
 db = firebase.database()
 storage = firebase.storage()
 
