@@ -12,9 +12,8 @@ firebase = pyrebase.initialize_app(firebaseConfig)
 db = firebase.database()
 storage = firebase.storage()
 
-'''
-create a report in realtime based on the unit which the doner is associated with it
-'''
+
+# create a report in realtime based on the unit which the doner is associated with it
 
 
 def create_report(unit_no):
@@ -37,8 +36,9 @@ def create_report(unit_no):
 
 
 '''
-whatsapp endpoint for doner
+whatsapp bot endpoint for doner
 - registerd user can get the pdf report link
+- non members will get a link to to donate and become a memeber
 '''
 
 
@@ -54,15 +54,21 @@ def sms_reply():
             break
 
     else:
-        w_resp = 'You are currently not registered as a doner with our organization, feel free to donate and addplease visit \n https://www.stjudechild.org/donate.aspx '
+        w_resp = 'You are currently not registered as a doner with our organization, feel free to donate and keep our cancer warrior safe..\nFor more information please visit:\nhttps://www.stjudechild.org\nTo donate please visit:\nhttps://www.stjudechild.org/donate.aspx '
 
     if found:
         if 'report' in request.form.get('Body') or 'Report' in request.form.get('Body'):
             w_resp = 'link:' + create_report(int(user_data['unit']))
         else:
-            w_resp = f"Hello {user_data['name']}\nEmail: {user_data['email']}\nUnit: {user_data['unit']}\nIf you want to see the report of your unit, please reply somthing like:\n'I want the report' or 'send me the report'\nThank you for your contibution :)"
+            w_resp = f"Welcome {user_data['name']},\nEmail: {user_data['email']}\nUnit: {user_data['unit']}\nIf you want to see the report of your unit, please reply somthing like:\n'I want the report' or 'send me the report'\nThank you for your contibution :)"
     resp.message(w_resp)
     return str(resp)
+
+
+# endpoint to get a custumized progress report based on the unit number provided
+@app.route("/pdf_link/<int:unit_num>", methods=['POST'])
+def get_pdf(unit_num):
+    return create_report(unit_num)
 
 
 if __name__ == "__main__":
