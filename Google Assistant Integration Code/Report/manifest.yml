@@ -1,5 +1,0 @@
----
-applications:
-  - name: StJudesReport
-    random-route: true
-    memory: 250M

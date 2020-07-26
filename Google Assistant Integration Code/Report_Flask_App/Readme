@@ -1,0 +1,3 @@
+These are the files required to run a Flask app for showing the donor report which are queried from the firebase realtime base. The Flask app is currently hosted live on the IBM Cloud. The configuration files for the IBM Cloud are also here. 
+
+The url for the webpage can accessed via the Google Assistant App's Saint Jude Agent.

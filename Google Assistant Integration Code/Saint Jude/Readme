@@ -1,0 +1,1 @@
+These are files used to configure the google assistant using DialogFlow. The agent is the St. Jude Agent which is invoked by calling "Talk to Saint Jude" using the Google Assistant. Intents are triggered based on the key words entered by the end user which perform actions like showing the reports on how the donations are being used, links to "Donate" and the "CEO's Message".
