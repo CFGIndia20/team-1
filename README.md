@@ -1,13 +1,10 @@
 # team-1
 
-hi guys Nidhi Shenvi here
-I think we can share our contact number and create a whatsapp group
-plz update your name , contact number, email and push commits
-Nidhi Shenvi 7899539745 shenvinidhi@gmail.com
+This is the team GitHub of Team #1 
 
-
-Hello guys, Jeevitha M V here
-9148098729 jeevithamv5@gmail.com
-
-Hi guys, Sanjiv Yelthimar Shenoy here
-9989406936 sanjiv.shenoy@gmail.com
+Problems solved:
+  - Feedback Application
+  - WhatsApp chat bots for donors as well as for benificiaries
+  - Actions on Google Assistent, to enable better and effecient access to Donor issues
+  - Data Visualization dashboard to analyze the collected data and reach effective conclusions
+  
